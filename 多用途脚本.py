@@ -61,7 +61,7 @@ while num !='0':#定义退出数字
 		print (output)
 
 	if num == '2':
-        #备份的源文件路径 
+		#备份的源文件路径 
 		source = ['C:/Users/'+getpass.getuser()+'/Documents/My" "Games/Hacknet/Accounts/save_Brzjomo.xml'] 
 		#备份的文件所放的地方 
 		target_dir = 'G:/备份/HackNet/' 
