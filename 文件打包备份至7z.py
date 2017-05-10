@@ -1,19 +1,19 @@
 #!/usr/bin/python
-# -*- coding: gbk -*-
+# -*- coding: utf-8 -*-
 import os 
 import time 
 import sys 
-#±¸·İµÄÔ´ÎÄ¼şÂ·¾¶ 
-source = ['D:/EDºº»¯/brzjomo.xml'] 
-#±¸·İµÄÎÄ¼şËù·ÅµÄµØ·½ 
-target_dir = 'E:/±¸·İ/' 
-#±¸·İÎÄ¼şµÄÃû×Ö 
+#å¤‡ä»½çš„æºæ–‡ä»¶è·¯å¾„ 
+source = ['D:/EDæ±‰åŒ–/brzjomo.xml'] 
+#å¤‡ä»½çš„æ–‡ä»¶æ‰€æ”¾çš„åœ°æ–¹ 
+target_dir = 'E:/å¤‡ä»½/' 
+#å¤‡ä»½æ–‡ä»¶çš„åå­— 
 target = target_dir + time.strftime('%Y-%m%d-%H%M')+'.7z' 
 #zip_command="7z a %s %s" %(target,' '.join(source))  
 zip_command="7z a %s %s" %(target,' '.join(source)) 
 if os.system(zip_command) == 0: 
-  print ('³É¹¦´ò°üÖÁ' + " " + "---" + target + "---")
+  print ('æˆåŠŸæ‰“åŒ…è‡³' + " " + "---" + target + "---")
 else: 
-  print ('´ò°üÊ§°Ü£¡')
-  print ('Çë¼ì²éÂ·¾¶ºÍ»·¾³±äÁ¿ÊÇ·ñÕıÈ·£¡')
+  print ('æ‰“åŒ…å¤±è´¥ï¼')
+  print ('è¯·æ£€æŸ¥è·¯å¾„å’Œç¯å¢ƒå˜é‡æ˜¯å¦æ­£ç¡®ï¼æ˜¯å¦å®‰è£…7zè½¯ä»¶ï¼')
 time.sleep(3)

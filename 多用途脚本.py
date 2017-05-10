@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: gbk -*-
+# -*- coding: utf-8 -*-
 import os 
 import time 
 import sys 
@@ -8,11 +8,11 @@ import getpass
 num = ''
 
 output= '''
-    1.±¸·Ýbrzjomo.xml
+    1.å¤‡ä»½brzjomo.xml
     
-    2.±¸·ÝHackNet´æµµ
+    2.å¤‡ä»½HackNetå­˜æ¡£
     
-    3.±¸·ÝMadGamesTycoon´æµµ1
+    3.å¤‡ä»½MadGamesTycoonå­˜æ¡£1
     
     4.py4
     
@@ -26,76 +26,76 @@ output= '''
     
     9.py9
 
-    0.ÍË³ö
+    0.é€€å‡º
 
 '''
 
 print (output)
 
-while num !='0':#¶¨ÒåÍË³öÊý×Ö
+while num !='0':#å®šä¹‰é€€å‡ºæ•°å­—
 	print ('---------------------------------------------')
-	num=input(" Ñ¡ÔñÐèÒªÖ´ÐÐµÄ²Ù×÷: ")
+	num=input(" é€‰æ‹©éœ€è¦æ‰§è¡Œçš„æ“ä½œ: ")
 	print ('---------------------------------------------')
 	if num =='0':
 		print ()
-		print ('ÕýÔÚÍË³ö')
+		print ('æ­£åœ¨é€€å‡º')
 		print ()
 		
 	if num == '1':
-		#±¸·ÝµÄÔ´ÎÄ¼þÂ·¾¶ 
-		source = ['D:/EDºº»¯/brzjomo.xml'] 
-		#±¸·ÝµÄÎÄ¼þËù·ÅµÄµØ·½ 
-		target_dir = 'E:/±¸·Ý/' 
-		#±¸·ÝÎÄ¼þµÄÃû×Ö 
+		#å¤‡ä»½çš„æºæ–‡ä»¶è·¯å¾„ 
+		source = ['D:/EDæ±‰åŒ–/brzjomo.xml'] 
+		#å¤‡ä»½çš„æ–‡ä»¶æ‰€æ”¾çš„åœ°æ–¹ 
+		target_dir = 'E:/å¤‡ä»½/' 
+		#å¤‡ä»½æ–‡ä»¶çš„åå­— 
 		target = target_dir + time.strftime('%Y-%m%d-%H%M')+'.7z' 
 		#zip_command="7z a %s %s" %(target,' '.join(source))  
 		zip_command="7z a %s %s" %(target,' '.join(source)) 
 		if os.system(zip_command) == 0: 
-		 print ('³É¹¦´ò°üÖÁ' + " " + "---" + target + "---")
+		 print ('æˆåŠŸæ‰“åŒ…è‡³' + " " + "---" + target + "---")
 		 print ('---------------------------------------------')
 		else: 
 		 print ('---------------------------------------------')
-		 print ('´ò°üÊ§°Ü£¡')
-		 print ('Çë¼ì²éÂ·¾¶ºÍ»·¾³±äÁ¿ÊÇ·ñÕýÈ·£¡')
+		 print ('æ‰“åŒ…å¤±è´¥ï¼')
+		 print ('è¯·æ£€æŸ¥è·¯å¾„å’ŒçŽ¯å¢ƒå˜é‡æ˜¯å¦æ­£ç¡®ï¼æ˜¯å¦å®‰è£…7zè½¯ä»¶ï¼')
 		time.sleep(3)
 		print (output)
 
 	if num == '2':
-        #±¸·ÝµÄÔ´ÎÄ¼þÂ·¾¶ 
+        #å¤‡ä»½çš„æºæ–‡ä»¶è·¯å¾„ 
 		source = ['C:/Users/'+getpass.getuser()+'/Documents/My" "Games/Hacknet/Accounts/save_Brzjomo.xml'] 
-		#±¸·ÝµÄÎÄ¼þËù·ÅµÄµØ·½ 
-		target_dir = 'G:/±¸·Ý/HackNet/' 
-		#±¸·ÝÎÄ¼þµÄÃû×Ö 
+		#å¤‡ä»½çš„æ–‡ä»¶æ‰€æ”¾çš„åœ°æ–¹ 
+		target_dir = 'G:/å¤‡ä»½/HackNet/' 
+		#å¤‡ä»½æ–‡ä»¶çš„åå­— 
 		target = target_dir + time.strftime('%Y-%m%d-%H%M')+'.7z' 
 		#zip_command="7z a %s %s" %(target,' '.join(source))  
 		zip_command="7z a %s %s" %(target,' '.join(source)) 
 		if os.system(zip_command) == 0: 
-		 print ('³É¹¦´ò°üÖÁ' + " " + "---" + target + "---")
+		 print ('æˆåŠŸæ‰“åŒ…è‡³' + " " + "---" + target + "---")
 		 print ('---------------------------------------------')
 		else: 
 		 print ('---------------------------------------------')
-		 print ('´ò°üÊ§°Ü£¡')
-		 print ('Çë¼ì²éÂ·¾¶ºÍ»·¾³±äÁ¿ÊÇ·ñÕýÈ·£¡')
+		 print ('æ‰“åŒ…å¤±è´¥ï¼')
+		 print ('è¯·æ£€æŸ¥è·¯å¾„å’ŒçŽ¯å¢ƒå˜é‡æ˜¯å¦æ­£ç¡®ï¼æ˜¯å¦å®‰è£…7zè½¯ä»¶ï¼')
 		time.sleep(5)
 		print (output)
 
 	if num == '3':
-		#±¸·ÝµÄÔ´ÎÄ¼þÂ·¾¶ 
+		#å¤‡ä»½çš„æºæ–‡ä»¶è·¯å¾„ 
 		source = ['C:/Users/'+getpass.getuser()+'/AppData/LocalLow/Eggcode/Mad" "Games" "Tycoon/savegame0.txt'] 
-		#±¸·ÝµÄÎÄ¼þËù·ÅµÄµØ·½ 
-		target_dir = 'L:/±¸·Ý/Game´æµµ/MadGamesTycoon/' 
-		#±¸·ÝÎÄ¼þµÄÃû×Ö 
+		#å¤‡ä»½çš„æ–‡ä»¶æ‰€æ”¾çš„åœ°æ–¹ 
+		target_dir = 'L:/å¤‡ä»½/Gameå­˜æ¡£/MadGamesTycoon/' 
+		#å¤‡ä»½æ–‡ä»¶çš„åå­— 
 		target = target_dir + time.strftime('%Y-%m%d-%H%M')+'.7z' 
 		#zip_command="7z a %s %s" %(target,' '.join(source))  
 		zip_command="7z a %s %s" %(target,' '.join(source)) 
 		if os.system(zip_command) == 0: 
-		 print ('³É¹¦´ò°üÖÁ' + " " + "---" + target + "---")
+		 print ('æˆåŠŸæ‰“åŒ…è‡³' + " " + "---" + target + "---")
 		 print ('---------------------------------------------')
 		else: 
 		 print ('---------------------------------------------')
-		 print ('´ò°üÊ§°Ü£¡')
+		 print ('æ‰“åŒ…å¤±è´¥ï¼')
 		 print ('---------------------------------------------')
-		 print ('Çë¼ì²éÂ·¾¶ºÍ»·¾³±äÁ¿ÊÇ·ñÕýÈ·£¡ÊÇ·ñ°²×°7zÈí¼þ£¡')
+		 print ('è¯·æ£€æŸ¥è·¯å¾„å’ŒçŽ¯å¢ƒå˜é‡æ˜¯å¦æ­£ç¡®ï¼æ˜¯å¦å®‰è£…7zè½¯ä»¶ï¼')
 		 print ('---------------------------------------------')
 		time.sleep(5)
 		print (output)
@@ -118,9 +118,9 @@ while num !='0':#¶¨ÒåÍË³öÊý×Ö
 	if num == '9':
 	 print ("py9")
 
-	time.sleep(0.2)#¶¨Òå×îÐ¡ÊäÈë¼ä¸ô
+	time.sleep(0.2)#å®šä¹‰æœ€å°è¾“å…¥é—´éš”
 
-if __name__ == '__main__':#¸øÍË³öÔö¼ÓÒ»¸öÏÔÊ¾Ìõ£¬ËäÈ»Ã»Ê²Ã´ÓÃ
+if __name__ == '__main__':#ç»™é€€å‡ºå¢žåŠ ä¸€ä¸ªæ˜¾ç¤ºæ¡ï¼Œè™½ç„¶æ²¡ä»€ä¹ˆç”¨
     for i in range(1,75):
         sys.stdout.write('0'+'=>'+"\b\b")
         sys.stdout.flush()
